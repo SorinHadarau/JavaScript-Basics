@@ -1,0 +1,129 @@
+/*The <script> tag: 
+In HTML, JavaScript code must be inserted between <script> and </script> tags. 
+The JS fubction below can be placed between <head></head> or <body></body> section of the HTML */
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "My first JavaScript"; 
+}
+</script>
+
+/*External scripta are practical when the same code is used in many different web pages.
+Example below can be included in HTML file and calls the code written on myScript.js file; */
+<script src = "myScript.js"></script>
+/*Advantages of placing JS in external files:
+    It separates HTML and code
+    Makes HTML and JS easier to read and mantain
+    Cached JS files can speed up page loads */
+    
+/*Using window.alert()
+    You can use an alert box to display data */
+<script>
+window.alert(5 + 6);
+</script>
+/*Using document.write()
+    For testing purposes, it is convenient to use document.write() */
+<script>
+document.write(5 + 6);
+</script>
+
+/*Using innerHTML
+    To access an HTML element, JS can use the document.getElementById(id) method.
+    The id attribute defines the HTML element. The innerHTML property defines the HTML content. */
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+
+/*Using console.log()
+    In your browser you can use console.log() method to display data. */
+<script>
+console.log(5 + 6);
+</script>
+
+/*JavaScript Syntax - JS statements
+    JS statements are separated by semicolon and represent instructions to be executed by a computer.
+    JS statements are composed of: Values, Operators, Expressions, Keywords and Comments. */
+var x = 5;
+var Y = 6;
+var z = x + z;
+
+//JavaScript Literals - Numbers (written with or without decimals)
+10.50
+1001
+
+//JavaScript Literals - Strings (text written with double or single quotes)
+"John Doe"
+'John Doe'
+
+//JavaScript Literals - Expressions (can also represent fixed values)
+5 + 6
+5 * 10
+
+/*JavaScript Variables
+    Variables are used to store data values. An equal sign is used to assing values to variables. */
+var x;
+x = 6;
+
+/*JavaScript Operators
+    Assignment operator ( = ) to assign values to variables. */
+var x = 5;
+var y = 6;
+//JS uses Arithmetic Operators ( + - * / ) to compute values.
+(5 + 6) * 10
+
+/*JavaScript Keywords
+    Keywords are used to identify actions to be performed.
+    The var keyword tells the browser to create a new variable. */
+var x = 5 + 6;
+var y = x * 10;
+
+/*JavaScript Comments
+    Not all JS comments are "executed".
+    Code after double slashes // or between /* and */ is treated as a comment.
+    Comments are ignored and will not be executed. */
+var x = 5;  // I will be executed
+// var x = 6;  I will NOT be executed
+
+//JavaScript is Case Sensitive. All JS identifiers are case sensitive.
+//The variables lastName and lastname are two different variables:
+var lastName = "Doe";
+var lastname = "Peterson";
+//Also JavaScript does not interpret VAR or Var as the keyword var.
+
+/*JavaScript and Camel Case
+    Historically, programmers have used three ways to join multiple words in a variable name:
+        Hyphens (first-name, last-name, master-card). Hyphens are NOT allowed in JavaScript.
+        Underscore (first_name, last_name, master_card)
+        Camel Case (FirstName, LastName, MasterCard). 
+        In JavaScript Camel Case often starts with a lower case letter (firstName, lastName, masterCard).
+        UNICODE is used in JS as a character set. */
+        
+/*JS Statements 
+    This statement tells the browser to to write "Hello" inside the HTML element with an id="demo" */
+document.getElementById("demo").innerHTML = "Hello";
+
+/*JS Programs
+    The statements contained in a JS program are executed one by one, in the same order as they are written.
+    In this example x, y, z are given values and finally z is displayed. */
+var x = 5;
+var y = 6;
+var z = x + y;
+document.getElementById("demo".innerHTML = z;
+//Ending statement with SEMICOLONS is not required, but highly recommended
+//JavaScript ignores multiple white spaces.The white spaces are added to make code more readable (recommended around operators)
+//If a script does not fit on one line, the best place to break it is after an operator:
+document.getElementById("demo").innerHTML =
+"Hello. How are you?";
+
+/*The Assignment Operator
+    In JS the qual sign (=) is an "assignment" operator NOT an "equal to" operator.
+    This is different from algebra. The following does not make sense in algebra: */
+x = x + 5 //It assigns a value of x + 5 to x
+//The "equal to" operator is written like == in JavaScript.
+
+//ONE STATEMENT, MANY VARIABLES. You can declare many variables with one statement:
+var person = "John Doe", carName = "Audi", price = "200";
+
+//............TO BE CONTINUED
+
+
+
